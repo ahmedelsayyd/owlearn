@@ -1,0 +1,43 @@
+@import './variables';
+
+.btn{
+  border: 1px solid transparent;
+  padding: .9rem 2.25rem;
+  background-color: $color-accent;
+  color: $color-white;
+  cursor: pointer;
+  outline: none;
+  transition: all .3s ease-out;
+
+  &.transparent{
+    background-color: transparent;
+    color: $color-accent;
+    border: 1px solid $color-accent;
+    &:hover{
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &--bg-white{
+    background-color: $color-white;
+    color: $color-accent;
+  }
+
+  &.text-black{
+    color: $color-black-700;
+  }
+
+  &--lg{
+    padding: 1.6rem 3.25rem;
+    font-weight: 600;
+  }
+
+  &--sm{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+}
+
+
