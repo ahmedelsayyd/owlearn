@@ -1,0 +1,60 @@
+
+@import '../../../../assets/scss/variables';
+
+
+.footer{
+
+  h4{ margin-bottom: 2rem; };
+
+  &__list{
+
+    flex-grow: 1;
+    li{
+      padding: .7rem 0;
+      flex-grow: 1;
+      flex-shrink: 0;
+      color: $color-black-400;
+      font-size: 1.2rem;
+      transition: all .3s ease-out;
+
+      &:hover{
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+
+
+    &:first-of-type{
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+      }
+    }
+
+
+    .contacts{
+      color: $color-blue-400;
+    }
+
+    .text{
+      margin: .5rem 0;
+    }
+
+    .icons{
+      &>*{
+        margin-right: 1rem;
+        color: $color-blue-400;
+      }
+    }
+  }
+}
+
+.copywright{
+
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: $color-black-800;
+
+  p{ margin: 0; }
+}

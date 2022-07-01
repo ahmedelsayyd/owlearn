@@ -1,0 +1,24 @@
+.d-flex{
+  display: flex;
+}
+
+
+.text-white{
+  color: $color-white;
+}
+
+
+.rounded{
+  border-radius: 6px;
+
+  &--sm{
+    border-radius: 6px;
+  }
+  &--md{
+    border-radius: 8px;
+  }
+
+  &--lg{
+    border-radius: 100px;
+  }
+}

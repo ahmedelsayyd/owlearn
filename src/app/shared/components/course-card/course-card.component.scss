@@ -1,0 +1,53 @@
+@import '../../../../assets/scss/variables';
+
+.course{
+
+  display: flex;
+  flex-direction: column;
+
+  &__image{
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__users{
+    position: absolute;
+    padding: .7rem 1.5rem;
+    bottom: 1.75rem;
+    left: 1.75rem;
+    background-color: $color-white;
+    align-items: center;
+
+    span{ color: $color-accent; font-weight: 500; font-size: 1.2rem;}
+    fa-icon{ color: $color-black-400; font-size: 1.3rem; margin-right: .25rem;}
+  }
+
+  &__date{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: $color-black-400;
+
+  }
+
+  p { width: 90%; }
+
+  &__actions{
+    justify-content: space-between;
+  align-items: center;
+
+  }
+  &__price{
+
+    gap: .75rem;
+    font-size: 1.5;
+    .old{ color: $color-black-400; }
+    .new{ color: $color-accent; font-weight: 600;}
+  }
+}

@@ -1,0 +1,19 @@
+<div class="course rounded">
+  <div class="course__image">
+    <img [src]="course?.src" alt="">
+    <div class="course__users d-flex rounded--lg">
+      <fa-icon [icon]="['far', 'user']"></fa-icon>
+      <span>120</span>
+    </div>
+  </div>
+  <div class="course__date">{{course?.date}}</div>
+  <h3 class="head head--secondary">{{course?.name}}</h3>
+  <p class="paragraph paragraph--sm">{{course?.description}}</p>
+  <div class="course__actions d-flex">
+    <div class="course__price d-flex">
+      <div class="new">{{course?.priceAfterDiscound}}</div>
+      <div class="old">{{course?.price}}</div>
+    </div>
+    <button class="btn btn--sm transparent rounded--md">Show All</button>
+  </div>
+</div>

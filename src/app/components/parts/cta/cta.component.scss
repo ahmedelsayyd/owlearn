@@ -1,0 +1,49 @@
+
+@import '../../../../assets/scss/variables';
+
+.cta{
+  height: max(27vw, 35rem);
+  background-color: $color-accent;
+
+  &__text{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8rem 1.5rem;
+
+
+    h2{
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__image{
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+    overflow: hidden;
+    padding: 0 1.5rem;
+
+    img{
+      height: 100%;
+      width: 85%;
+      position: relative;
+      top: 4rem;
+      z-index: 10;
+
+      @media screen and(max-width:1000px) {
+        top: 6rem;
+      }
+    }
+
+  }
+
+  &__circle{
+    position: absolute;
+    width: max(27vw, 50rem);
+    height:  max(27vw, 50rem);
+    background: linear-gradient(180deg, #D2388F 0%, #C8468F 100%);
+    z-index: 1;
+    border-radius: 50%;
+  }
+}

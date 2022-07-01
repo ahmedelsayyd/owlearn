@@ -1,0 +1,101 @@
+@import '../../../../assets/scss/variables';
+
+
+.courses{
+
+  min-height: 50rem;
+
+  &__head{
+    justify-content: space-between;
+  }
+
+  hr{
+    margin: 2rem 0;
+    border: none;
+    border-bottom: 1px solid $color-black-200;
+  }
+
+  &__filteration{
+    border-radius: 0 100px 100px 0;
+    margin: 4rem 0 3rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+      content: '';
+      position: absolute;
+
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 3rem;
+      background-color: rgba($color: #fff, $alpha: 1);
+      box-shadow: -1rem 0 3rem rgba($color: #fff, $alpha: .4),
+      -2rem 0 5rem rgba($color: #fff, $alpha: 1),
+      -3rem 0 6rem rgba($color: #fff, $alpha: 1),
+      -4rem 0 7rem rgba($color: #fff, $alpha: 1),
+      inset -8rem 0 2rem rgba($color: #fff, $alpha: .4);
+    }
+
+    ul{
+      column-gap: 1rem;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar{height: 0;}
+      li{
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        @media screen and (min-width:1200px) {
+          flex-grow: 0;
+        }
+      }
+    }
+
+    button.btn{
+      border: 2px solid #230f0f33;
+      color: $color-black-700;
+      font-size: 1.5rem;
+
+      &.active{
+        border-color: transparent;
+        color: $color-white;
+      }
+
+       &:hover{
+        border-color: transparent;
+        color: $color-white;
+      }
+    }
+  }
+
+
+  &__cards{
+    gap: 4rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    // justify-content: space-between;
+
+    .card{
+      overflow: hidden;
+      width: 30%;
+      // flex-basis: 20.3333%;
+      // :host :ng-deep app-course-card .course{
+      //   flex-basis: 20.3333%;
+
+      // }
+    }
+  }
+
+  .emtyList{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    p{
+      font-size: 3rem;
+      color: $color-black-600;
+    }
+  }
+}

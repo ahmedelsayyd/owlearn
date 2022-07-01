@@ -1,0 +1,51 @@
+@import '../scss/variables';
+
+.heading{
+
+  color: $color-black-700;
+
+  &.white{
+    color: $color-white;
+  }
+
+  &--primary{
+    font-size: 6rem;
+    font-weight: 800;
+  }
+
+  &--secondry{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  &--terthery{
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+}
+
+
+.paragraph{
+  color: $color-black-700;
+  line-height: 1.7;
+
+
+  &--lg{
+    margin: 4rem 0;
+    font-weight: 500;
+  }
+  &--md{
+    color: $color-black-400;
+    margin: 2.25rem 0;
+  }
+
+  &--sm{
+    margin: 2.25rem 0;
+    color: $color-black-400;
+    line-height: 1.5;
+    font-size: 1.3rem;
+  }
+
+
+
+}

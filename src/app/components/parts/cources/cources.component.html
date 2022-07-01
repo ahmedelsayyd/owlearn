@@ -1,0 +1,50 @@
+
+<div class="courses section">
+  <div class="container">
+    <div class="">
+
+      <div class="courses__head d-flex">
+        <h2 class="head head--secondary">Discover Cource & Bootcamp</h2>
+        <button class="btn btn--lg rounded transparent">Show All</button>
+      </div>
+
+      <div class="courses__filteration">
+        <ul class="d-flex">
+          <li *ngFor="let filter of filterations ; let i= index">
+            <button
+            [ngClass]="{'active': filter.active, 'transparent': !filter.active}"
+             class="btn transparent rounded--lg" (click)="applyFilter(filter, i)">{{filter.name}}</button>
+          </li>
+        </ul>
+      </div>
+
+      <hr>
+
+
+      <ng-container *ngIf="listCount > 0; then thenBlock else elseBlock"></ng-container>
+
+      <ng-template #thenBlock>
+        <div class="courses__cards d-flex" >
+              <div class="card rounded" *ngFor="let course of allCourses | filterBy : selectedFilter">
+                <app-course-card [course]="course"></app-course-card>
+              </div>
+            </div>
+      </ng-template>
+
+      <ng-template #elseBlock>
+        <div class="emtyList d-flex">
+          <p>NO AVAILABLE COURCES </p>
+        </div>
+      </ng-template>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <app-course-card></app-course-card> -->

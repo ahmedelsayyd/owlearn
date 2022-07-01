@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+
+@import './assets/scss/variables';
+@import './assets/scss/typography';
+@import './assets/scss/button';
+@import './assets/scss/utils';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li{ list-style: none;}
+
+.section{
+  padding: 6rem 1.5rem; display: flex;
+  > * {flex-grow: 1;}
+}
+
+
+.container{
+  max-width: 110rem;
+  margin: 0 auto;
+  display: flex;
+
+
+  & > * {flex-grow: 1;}
+
+  .flex-item{
+    flex-basis: 42%;
+  }
+
+  @media screen and (min-width: 1300px){
+    max-width: 120rem;
+  }
+
+}
+
+// .spacer{
+//   flex-basis: 7%;
+
+// }
+html{
+    font-size: 62.5%;
+
+    @media screen and (max-width: 992px){
+      font-size: 60%;
+    }
+
+    @media screen and (max-width: 780px){
+      font-size: 58%;
+    }
+
+    @media screen and (min-width: 1300px){
+      font-size: 70%;
+    }
+
+    overflow-x: hidden;
+}
+
+body{
+  font-size: $defaultFontSize;
+    font-family: 'Maven Pro', sans-serif;
+
+}
