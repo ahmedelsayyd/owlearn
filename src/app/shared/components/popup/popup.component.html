@@ -1,0 +1,27 @@
+<div class="contactUs" >
+  <div class="contactUs__card" [@toggolecontactUsCard]="(openModel$ |async)  ? 'show' : 'hide' ">
+    <div class="icon" (click)="closeModal()">
+      &times;
+      <!-- <fa-icon [icon] ="['fas','xmark']" ></fa-icon> -->
+    </div>
+
+    <form class="form d-flex" >
+
+      <div class="form__group">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter name">
+      </div>
+
+      <div class="form__group">
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="Enter Email">
+      </div>
+
+      <div class="form__group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Wright Message "></textarea>
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -11,6 +11,8 @@ import { CtaComponent } from './components/parts/cta/cta.component';
 import { TestimonialComponent } from './components/parts/testimonial/testimonial.component';
 import { HeaderComponent } from './components/parts/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     SharedModule
   ],
   providers: [],

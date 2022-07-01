@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CourseCardComponent } from './components/course-card/course-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FilterByPipe } from '../pipes/filterBy.pipe';
+import { PopupComponent } from './components/popup/popup.component';
 
 
 @NgModule({
@@ -13,18 +14,20 @@ import { FilterByPipe } from '../pipes/filterBy.pipe';
     NavbarComponent,
     FooterComponent,
     CourseCardComponent,
-    FilterByPipe
+    FilterByPipe,
+    PopupComponent
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule
-  ],
+    FontAwesomeModule,
+ ],
   exports: [
     NavbarComponent,
     FooterComponent,
     CourseCardComponent,
     FontAwesomeModule,
-    FilterByPipe
+    FilterByPipe,
+    PopupComponent
   ]
 })
 export class SharedModule { }

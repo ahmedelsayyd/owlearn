@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { UiService } from '../../services/ui.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public uiService: UiService) { }
 
   ngOnInit(): void {
   }
